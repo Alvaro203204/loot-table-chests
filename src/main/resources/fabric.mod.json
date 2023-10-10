@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "loottablechests",
+  "version": "${version}",
+
+  "name": "Loot Table Chests",
+  "description": "Generates chests with items based on Loot Tables of Minecraft Vanilla",
+  "authors": [
+    "Alvaro203204"
+  ],
+
+  "license": "MIT License",
+  "icon": "assets/loottablechests/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.alvaro203204.loottablechests.LootTableChests"
+    ]
+  },
+  "mixins": [
+    "loottableschests.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
